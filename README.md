@@ -14,5 +14,9 @@ Functions were created to simplify code.
 
 Now, the program checks to see if the letter the user inputted was in the random word.
 
+Milestone_4
+
+Hangman class created. No errors produced when running the code.
+
 
 
