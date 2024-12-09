@@ -1,16 +1,16 @@
-word_list = ["apple", "pears", "orange", "mango", "cherry"]
+fruit_word_list = ["apple", "pears", "orange", "mango", "cherry"]
 
-print(word_list)
+print(fruit_word_list)
 
 import random as r
 
-word = r.choice(word_list)
+random_word = r.choice(word_list)
 
-print(word)
+print(random_word)
 
-guess = input("Enter a single letter ")
+user_guess = input("Enter a single letter ")
 
-if not guess.isalpha() or len(guess) > 1:
+if not user_guess.isalpha() or len(user_guess) > 1:
     print("Oops! That is not a valid input")
 else:
     print("Good guess!")
