@@ -4,7 +4,7 @@ print(fruit_word_list)
 
 import random as r
 
-random_word = r.choice(word_list)
+random_word = r.choice(fruit_word_list)
 
 print(random_word)
 
