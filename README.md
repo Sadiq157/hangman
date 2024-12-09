@@ -18,5 +18,9 @@ Milestone_4
 
 Hangman class created. No errors produced when running the code.
 
+Milestone_5
 
+Hangman game completed. Lots of code from Milestone 5 was tweaked as the code did not run as expected. A few extras added into the code that was not mentioned on the task so the game runs better. 
+
+Overall, a nice exercise. I struggled most with the 4th milestone, but my weakness is definetly object orientated programming. I find Classes and Functions confusing. 
 
