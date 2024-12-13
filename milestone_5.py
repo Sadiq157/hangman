@@ -4,6 +4,7 @@ fruit_word_list = ["apple", "pears", "orange", "mango", "cherry"]
 
 print(f"One fruit will be chosen from {fruit_word_list}. You have 3 attempts to guess the letters in the chosen fruit")
 
+
 class Hangman:
     def __init__(self, word_list, num_lives=3):
         self.num_lives = num_lives
@@ -19,6 +20,7 @@ class Hangman:
             for index, letter in enumerate(self.word):
                 if letter == guess:
                     self.word_guessed[index] = guess
+            # Print out the guess
         else:
             print(f"Sorry, {guess} is not in the word.")
             self.num_lives -= 1
@@ -33,13 +35,15 @@ class Hangman:
                 print("You already tried that letter!")
             else:
                 self.check_guess(guess)
+                print(self.word_guessed)
                 self.list_of_guesses.append(guess)  
                 break  
+
 
 def play_game(word_list):
     num_lives = 3
     game = Hangman(word_list, num_lives)  
-    game.num_lives = num_lives  
+    game.num_lives = num_lives  # This isn't needed
 
     while True:  
         if game.num_lives == 0:
@@ -49,7 +53,11 @@ def play_game(word_list):
         if "_" not in game.word_guessed:
             print(f"Congratulations. You won the game! The word was: {game.word}")
             break
+            
+        # Can keep this all condensed into one if statement.
 
         game.ask_for_input()
+
+# Floating code should be minimised. Explore if __name__ = main.
 
 play_game(fruit_word_list)
